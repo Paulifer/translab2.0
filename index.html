@@ -9,10 +9,11 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-	<!--Seccion login-->
+	<!-------------------------Seccion login----------------------------->
 	<div class="container" id="pagLogin">
 		<div id="logo">
 			<img src="src/img/logo.png">
+			<h1>TRANS-LAB</h1>
 		</div>
 		<div id="login">
 			<div>
@@ -24,9 +25,49 @@
   				<input class="form-control" type="password" id="contrasena" placeholder="Contraseña">
   				<i class="fa fa-unlock " aria-hidden="true"></i>
 				</div>
+				<button type="button"	id="btnIni" class="btn btn-warning">INICIAR SECIÓN</button>
+				<button type="button" id="restaurarclave" class="btn btn-link">¿Olvidaste tu contraseña?</button>
+				<p id="regi">¿No tienes cuenta? <button type="button" id="registrate" class="btn btn-link">REGISTRATE</button></p>
+			</div>
 		</div>
+		<!-----------------Seccion menú------------------------>
+	<div id="containerMenu " class="divDisplayNone">
+		<div  id="hamburguesa">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">TRANS-LAB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                       <p><a class="nav-link" href="#">Ver saldo</a></p> 
+                    </li>
+                    <li class="nav-item">
+                       <p> <a class="nav-link" href="#">Calcular tarifa</a></p>
+                    </li>
+                    <li class="nav-item">
+                       <p><a class="nav-link " href="#">perfil</a></p> 
+                    </li>
+                    <li class="nav-item">
+                        <p><a class="nav-link " href="#">Preguntas frecuentes</a></p>
+                    </li>
+                    <li class="nav-item">
+                       <p><a class="nav-link " href="#">Home</a></p> 
+                    </li>
+                </ul>
+          </div>
+        </nav>
+	   <div id="menu">
+        <button type="button" id="saldo" class="btn btn-primary btn-lg btn-block">VER SALDO</button>
+        <button type="button" id="tarifa" class="btn btn-primary btn-lg btn-block">CALCULAR TARIFA</button>
+        <button type="button" id="perfil" class="btn btn-primary btn-lg btn-block">PERFIL</button>
+        <button type="button" id="preguntas" class="btn btn-primary btn-lg btn-block">PREGUNTAS FRECUENTES</button>   
+       </div>
+        
+
+    </div>
 	</div>
-	
 
 
 
