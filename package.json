@@ -1,0 +1,15 @@
+{
+  "name": "translab2.0",
+  "version": "0.0.1",
+  "description": "desarrollando nuevamente translab pero mejorado con tdd y firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "test",
+    "development"
+  ],
+  "author": "paulina huanaco",
+  "license": "ISC"
+}
