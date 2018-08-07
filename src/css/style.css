@@ -77,8 +77,8 @@ h1 {
 }
 
 #btnIni{
-  width: 250px;
-  background-color: : #F6A800;
+  width: 290px;
+  background-color: #F6A800;
 }
 #registrate{
   text-align: center;
@@ -90,4 +90,23 @@ h1 {
 #restaurarclave{
   color: white;
 }
+.href{
+  background-color: #F6A800; 
+}
 
+.btn-primary:hover {
+
+    color: #fff;
+    background-color: #F6A800;
+    border-color: #F6A800;
+
+}
+
+body{
+  background-color:  #b1aead;
+}
+
+#menu{
+  padding: 73px 34px;
+  
+}
