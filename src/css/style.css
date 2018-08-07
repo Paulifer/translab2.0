@@ -108,5 +108,16 @@ body{
 
 #menu{
   padding: 73px 34px;
-  
+
+}
+
+#containerfoto{
+  background-color: #F6A800;
+}
+
+#gato{
+  border-radius: 40em 40em;
+}
+#containerPerfil{
+  background-color:  #b1aead;
 }
