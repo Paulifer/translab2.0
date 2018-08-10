@@ -21,7 +21,6 @@ const tarjetas = data =>{
 		const saldosBip = data.saldoTarjeta.match(regexp);
 		const saldoOk = parseInt(saldosBip[0]+saldosBip[1]);
 		contenedorSaldo.innerHTML = '$' + saldoOk ;	 
-		console.log(saldosBip);
 		console.log(saldoOk);
 	};
 }
