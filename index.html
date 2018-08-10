@@ -38,30 +38,7 @@
 
 		<!-----------------Seccion menú------------------------>
 	<div id="containerMenu" class="divDisplayNone">
-		<div  id="hamburguesa">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TRANS-LAB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <a id="saldo" href="#" onclick="opensaldo()">
-              <i class="fas fa-dollar-sign"></i> Ver Saldo</a>
-            <a id="tarifa" href="#" onclick="opentarifa()">
-              <i class="fas fa-calculator"></i> Calcular Tarifa</a>
-            <a id="perfil" href="#" onclick="openperfil()">
-              <i class="fas fa-user-alt"></i> Perfil</a>
-            <a id="preguntas" href="#" onclick="openpreguntas()">
-              <i class="fas fa-question"></i> Preguntas Frecuentes</a>
-            <a id="home" href="#" onclick="openhome()">
-              <i class="fas fa-home"></i> Home</a>
-            <a href="#" onclick="logout()">
-              <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
-          </ul>
-        </div>
-       </nav>
-      </div>
+	
       <div id="menu">
       <button type="button" id="saldo" class="btn btn-warning btn-lg btn-block">VER SALDO</button>
       <button type="button" id="tarifa" class="btn btn-warning btn-lg btn-block">CALCULAR TARIFA</button>
@@ -73,67 +50,18 @@
     <!------------------SALDO---------------------->
 
     <div id="containerSaldo" class="divDisplayNone">
-      <div  id="hamburguesa">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TRANS-LAB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <a id="saldo" href="#" onclick="opensaldo()">
-              <i class="fas fa-dollar-sign"></i> Ver Saldo</a>
-            <a id="tarifa" href="#" onclick="opentarifa()">
-              <i class="fas fa-calculator"></i> Calcular Tarifa</a>
-            <a id="perfil" href="#" onclick="openperfil()">
-              <i class="fas fa-user-alt"></i> Perfil</a>
-            <a id="preguntas" href="#" onclick="openpreguntas()">
-              <i class="fas fa-question"></i> Preguntas Frecuentes</a>
-            <a id="home" href="#" onclick="openhome()">
-              <i class="fas fa-home"></i> Home</a>
-            <a href="#" onclick="logout()">
-              <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
-          </ul>
-        </div>
-       </nav>
-      </div>
-      <input type="text" id="boxsaldo" placeholder="Numero de tarjeta">
-      <select class="custom-select">
+     
+      <input type="text" id="boxsaldo" placeholder="Ingrese numero de su tarjeta">
+      <select class="custom-select" id="selectarjeta">
         <option selected="">Elija una opción</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
       </select>
-      <button type="button" onclick="bip()" class="btn btn-warning">Ver Saldo</button>
-
+      <button type="button" onclick="saldobip()" class="btn btn-warning">Ver Saldo</button>
+      <div id="contenedorSaldo"></div>
     </div>
 
     <!------------CALCULAR TARIFA------->
     <div id="containerTarifa" class="divDisplayNone">
-      <div  id="hamburguesa">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TRANS-LAB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <a id="saldo" href="#" onclick="opensaldo()">
-              <i class="fas fa-dollar-sign"></i> Ver Saldo</a>
-            <a id="tarifa" href="#" onclick="opentarifa()">
-              <i class="fas fa-calculator"></i> Calcular Tarifa</a>
-            <a id="perfil" href="#" onclick="openperfil()">
-              <i class="fas fa-user-alt"></i> Perfil</a>
-            <a id="preguntas" href="#" onclick="openpreguntas()">
-              <i class="fas fa-question"></i> Preguntas Frecuentes</a>
-            <a id="home" href="#" onclick="openhome()">
-              <i class="fas fa-home"></i> Home</a>
-            <a href="#" onclick="logout()">
-              <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
-          </ul>
-        </div>
-       </nav>
-      </div>
+     
       <input type="text" id="boxtarjeta" placeholder="Número tarjeta">
       <select class="custom-select">
         <option selected="">Seleccione</option>
@@ -152,30 +80,7 @@
 
     <!-----------PERFIL-------->
     <div id="containerPerfil" class="divDisplayNone">
-      <div  id="hamburguesa">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TRANS-LAB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <a id="saldo" href="#" onclick="opensaldo()">
-              <i class="fas fa-dollar-sign"></i> Ver Saldo</a>
-            <a id="tarifa" href="#" onclick="opentarifa()">
-              <i class="fas fa-calculator"></i> Calcular Tarifa</a>
-            <a id="perfil" href="#" onclick="openperfil()">
-              <i class="fas fa-user-alt"></i> Perfil</a>
-            <a id="preguntas" href="#" onclick="openpreguntas()">
-              <i class="fas fa-question"></i> Preguntas Frecuentes</a>
-            <a id="home" href="#" onclick="openhome()">
-              <i class="fas fa-home"></i> Home</a>
-            <a href="#" onclick="logout()">
-              <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
-          </ul>
-        </div>
-       </nav>
-      </div>
+      
       <div id="containerfoto">
         <img id="gato" src="src/img/gato.jpg">
       </div>
@@ -191,30 +96,7 @@
 
     <!-----------PREGUNTAS FRECUENTES -------->
     <div id="containerPreguntas" class="divDisplayNone">
-      <div  id="hamburguesa">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TRANS-LAB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <a id="saldo" href="#" onclick="opensaldo()">
-              <i class="fas fa-dollar-sign"></i> Ver Saldo</a>
-            <a id="tarifa" href="#" onclick="opentarifa()">
-              <i class="fas fa-calculator"></i> Calcular Tarifa</a>
-            <a id="perfil" href="#" onclick="openperfil()">
-              <i class="fas fa-user-alt"></i> Perfil</a>
-            <a id="preguntas" href="#" onclick="openpreguntas()">
-              <i class="fas fa-question"></i> Preguntas Frecuentes</a>
-            <a id="home" href="#" onclick="openhome()">
-              <i class="fas fa-home"></i> Home</a>
-            <a href="#" onclick="logout()">
-              <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
-          </ul>
-        </div>
-       </nav>
-      </div>
+     
       <div id="titulo">
        <h2>PREGUNTAS FRECUENTES</h2> 
       </div>

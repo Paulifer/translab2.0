@@ -119,3 +119,10 @@ a{
   color: #d39e00;
 
 }
+#contenedorSaldo{
+  background-color: #ffc107;
+      padding: 35px;
+}
+#containerSaldo{
+  text-align: center;
+}
